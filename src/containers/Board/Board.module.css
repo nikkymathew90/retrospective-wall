@@ -1,0 +1,9 @@
+.Board {
+  display: flex;
+  flex-flow: wrap;
+  height: 100%;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+}
