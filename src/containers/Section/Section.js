@@ -26,18 +26,20 @@ const Section = props => {
     <div className={classes.Section}>
       <div>
         <b>{props.sectiondata.label}</b>
-        <i onClick={addCardHandler}></i>
+        <i className={classes.Addbtn} onClick={addCardHandler}></i>
       </div>
 
       <div>
         <div className={classes.CardContainer}>
           {cards.map(card => {
-            return <Card cardText={card} />;
+            return (
+              <Card cardText={card} sectionName={props.sectiondata.name} />
+            );
           })}
         </div>
         {textAreaFlag && (
-          <div className={classes.Backdrop} onClick={closeInputHandler}>
-            <i className={classes.Close}></i>
+          <div className={classes.Backdrop}>
+            <i className={classes.close}>X</i>
             <textarea
               placeholder="Click to enter"
               onKeyPress={handleKeyPress}

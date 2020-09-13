@@ -5,10 +5,10 @@ import classes from "../Board/Board.module.css";
 class Board extends Component {
   state = {
     Sections: [
-      { name: "went-well", label: "What went well", id: "1" },
-      { name: "improvements", label: "What can be improved", id: "2" },
-      { name: "start-doing", label: "Start doing", id: "3" },
-      { name: "start-doing", label: "Action Items", id: "4" }
+      { name: "WentWell", label: "What went well", id: "1" },
+      { name: "Improvements", label: "What can be improved", id: "2" },
+      { name: "StartDoing", label: "Start doing", id: "3" },
+      { name: "ActionItems", label: "Action Items", id: "4" }
     ]
   };
 

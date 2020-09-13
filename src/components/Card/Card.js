@@ -3,8 +3,8 @@ import classes from "../Card/Card.module.css";
 
 const card = props => {
   return (
-    <div className={classes.Card}>
-      <p>{props.cardText.content}</p>
+    <div className={`${classes.Card} ${classes[props.sectionName]}`}>
+      <span>{props.cardText.content}</span>
     </div>
   );
 };

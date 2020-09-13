@@ -6,11 +6,11 @@
   font-size: 20px;
 }
 
-.Section i {
+.Section .Addbtn {
   width: 51px;
   height: 50px;
   display: inline-block;
-  background: url(/static/media/add.02ea0f07.png) center no-repeat;
+  background: url("./../../assets/add.png") center no-repeat;
   background-size: 30px 30px;
   position: relative;
   top: 15px;
@@ -29,6 +29,7 @@ textarea {
 
 .CardContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Backdrop {
